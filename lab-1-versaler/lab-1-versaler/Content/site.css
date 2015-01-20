@@ -13,6 +13,10 @@ header h1{
     margin: 0 auto;
 }
 
+p, a{
+    color: white;
+}
+
 textarea {
     width: 400px;
     height: 200px;
