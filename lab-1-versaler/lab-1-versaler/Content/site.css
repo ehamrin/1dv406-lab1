@@ -37,3 +37,15 @@ input[type=submit] {
     margin-left: 125px;
 }
 
+.validation-error ul{
+    margin: 0;
+    color: #ff0000;
+    list-style-type: none;
+}
+
+.validation-error li{
+    text-align: center;
+    padding: 10px;
+    display: block;
+}
+

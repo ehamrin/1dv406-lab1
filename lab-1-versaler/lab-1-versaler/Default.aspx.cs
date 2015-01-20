@@ -21,20 +21,24 @@ namespace lab_1_versaler
         /// </summary>
         protected void Send_Click(object sender, EventArgs e)
         {
-            if(Send.Text == Strings.SendButton)
+            if (IsValid)
             {
-                int upperCase = TextAnalyzer.GetNumberOfCapitals(Message.Text);
-                Message.Enabled = false;
-                Result.Visible = true;
-                Result.Text = String.Format(Strings.ResultMessage, upperCase.ToString());
-                Send.Text = Strings.ResetButton;
-            }else
-            {
-                Result.Visible = false;
-                Message.Text = "";
-                Send.Text = Strings.SendButton;
-                Message.Enabled = true;
+                if (Send.Text == Strings.SendButton)
+                {
+                    int upperCase = TextAnalyzer.GetNumberOfCapitals(Message.Text);
+                    Message.Enabled = false;
+                    Result.Visible = true;
+                    Result.Text = String.Format(Strings.ResultMessage, upperCase.ToString());
+                    Send.Text = Strings.ResetButton;
+                }
+                else
+                {
+                    Result.Visible = false;
+                    Message.Text = "";
+                    Send.Text = Strings.SendButton;
+                    Message.Enabled = true;
 
+                }
             }
         }
     }
