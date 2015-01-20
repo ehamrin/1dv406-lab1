@@ -17,7 +17,7 @@
             <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Message area cannot be empty" ControlToValidate="Message" Text="" Display="None" EnableTheming="True" SetFocusOnError="True" />
             <asp:Label ID="Result" runat="server" Text="" Visible="False"/>
             <asp:ValidationSummary ID="ValidationSummary1" CssClass="validation-error" runat="server" />
-            <asp:Button ID="Send" runat="server" Text="" OnClick="Send_Click" />
+            <asp:Button ID="Send" runat="server" Text="Send" OnClick="Send_Click" />
             
         </div>
     </form>
