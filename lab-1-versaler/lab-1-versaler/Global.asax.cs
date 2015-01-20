@@ -15,8 +15,8 @@ namespace lab_1_versaler
         {
             var jQuery = new ScriptResourceDefinition
             {
-                Path = "~/Scripts/jquery/jquery-2.1.3.min.js",
-                DebugPath = "~/Scripts/jquery/jquery-2.1.3.js",
+                Path = "~/Scripts/jquery-2.1.3.min.js",
+                DebugPath = "~/Scripts/jquery-2.1.3.js",
                 CdnPath = "http://ajax.microsoft.com/ajax/jQuery/jquery-2.1.3.min.js",
                 CdnDebugPath = "http://ajax.microsoft.com/ajax/jQuery/jquery-2.1.3.js",
             };

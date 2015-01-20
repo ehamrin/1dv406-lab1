@@ -124,8 +124,7 @@
     <value>Reset</value>
   </data>
   <data name="ResultMessage" xml:space="preserve">
-    <value>Number of capital letters: {0}</value>
-    <comment>Requires variable (int)</comment>
+    <value>Number of capital letters</value>
   </data>
   <data name="SendButton" xml:space="preserve">
     <value>Send</value>

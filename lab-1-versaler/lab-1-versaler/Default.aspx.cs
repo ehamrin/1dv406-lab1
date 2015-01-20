@@ -11,9 +11,6 @@ namespace lab_1_versaler
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack) {
-                Send.Text = Strings.SendButton;
-            }
         }
 
         /// <summary>
@@ -23,20 +20,20 @@ namespace lab_1_versaler
         {
             if (IsValid)
             {
-                if (Send.Text == Strings.SendButton)
+                if (Send.Text == ResStrings.SendButton)
                 {
                     int upperCase = TextAnalyzer.GetNumberOfCapitals(Message.Text);
                     Message.Enabled = false;
                     Result.Visible = true;
-                    Result.Text = String.Format(Strings.ResultMessage, upperCase.ToString());
-                    Send.Text = Strings.ResetButton;
+                    Result.Text = String.Format("{0}: {1}", ResStrings.ResultMessage, upperCase.ToString());
+                    Send.Text = ResStrings.ResetButton;
                 }
                 else
-                {
-                    Result.Visible = false;
+                { 
                     Message.Text = "";
-                    Send.Text = Strings.SendButton;
+                    Send.Text = ResStrings.SendButton;
                     Message.Enabled = true;
+                    Result.Visible = false;
 
                 }
             }
