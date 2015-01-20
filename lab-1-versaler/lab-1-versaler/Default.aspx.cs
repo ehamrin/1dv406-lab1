@@ -20,23 +20,22 @@ namespace lab_1_versaler
         {
             if (IsValid)
             {
-                if (Send.Text == ResStrings.SendButton)
-                {
-                    int upperCase = TextAnalyzer.GetNumberOfCapitals(Message.Text);
-                    Message.Enabled = false;
-                    Result.Visible = true;
-                    Result.Text = String.Format("{0}: {1}", ResStrings.ResultMessage, upperCase.ToString());
-                    Send.Text = ResStrings.ResetButton;
-                }
-                else
-                { 
-                    Message.Text = "";
-                    Send.Text = ResStrings.SendButton;
-                    Message.Enabled = true;
-                    Result.Visible = false;
-
-                }
+                int upperCase = TextAnalyzer.GetNumberOfCapitals(Message.Text);
+                Message.Enabled = false;
+                Result.Visible = true;
+                Result.Text = String.Format("{0}: {1}", ResStrings.ResultMessage, upperCase.ToString());
+                Send.Visible = false;
+                Reset.Visible = true;
             }
+        }
+
+        protected void Reset_Click(object sender, EventArgs e)
+        {
+            Message.Text = "";
+            Message.Enabled = true;
+            Result.Visible = false;
+            Send.Visible = true;
+            Reset.Visible = false;
         }
     }
 }
