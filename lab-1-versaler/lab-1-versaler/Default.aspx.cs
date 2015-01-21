@@ -14,7 +14,8 @@ namespace lab_1_versaler
         }
 
         /// <summary>
-        /// Determines state of button and calculates/resets form
+        /// Disable input
+        /// Calculate capital letters
         /// </summary>
         protected void Send_Click(object sender, EventArgs e)
         {
@@ -29,6 +30,9 @@ namespace lab_1_versaler
             }
         }
 
+        /// <summary>
+        /// Resets form
+        /// </summary>
         protected void Reset_Click(object sender, EventArgs e)
         {
             Message.Text = "";
