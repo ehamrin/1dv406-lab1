@@ -10,7 +10,7 @@
 <body>
     <form id="form1" runat="server">
         <header>
-            <h1>Count capital letters in text...</h1>
+            <h1><asp:Literal ID="PageTitle" runat="server" /></h1>
         </header>
         <div id="wrapper">
             <asp:TextBox ID="Message" runat="server" TextMode="MultiLine" />

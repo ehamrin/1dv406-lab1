@@ -13,6 +13,7 @@ namespace lab_1_versaler
         {
             Send.Text = ResStrings.SendButton;
             Reset.Text = ResStrings.ResetButton;
+            PageTitle.Text = ResStrings.PageTitle;
         }
 
         /// <summary>
