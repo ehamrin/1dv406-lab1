@@ -18,7 +18,7 @@
             <asp:Label ID="Result" runat="server" Text="" Visible="False"/>
             <asp:ValidationSummary ID="ValidationSummary1" CssClass="validation-error" runat="server" />
             <asp:Button ID="Send" runat="server" Text="Send" OnClick="Send_Click" />
-            <asp:Button ID="Reset" runat="server" Text="Reset" OnClick="Reset_Click" CausesValidation="False" Visible="False" />
+            <asp:Button ID="Reset" runat="server" Text="Reset" CausesValidation="False" Visible="False" OnClick="Reset_Click" />
             
         </div>
     </form>
