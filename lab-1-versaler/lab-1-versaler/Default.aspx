@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="lab_1_versaler.Default" EnableViewState="false" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="lab_1_versaler.Default" ViewStateMode="disabled" %>
 
 <!DOCTYPE html>
 
@@ -10,7 +10,7 @@
 <body>
     <form id="form1" runat="server">
         <header>
-            <h1>Count capital letters?</h1>
+            <h1>Count capital letters in text...</h1>
         </header>
         <div id="wrapper">
             <asp:TextBox ID="Message" runat="server" TextMode="MultiLine" />
@@ -19,7 +19,6 @@
             <asp:ValidationSummary ID="ValidationSummary1" CssClass="validation-error" runat="server" />
             <asp:Button ID="Send" runat="server" Text="Send" OnClick="Send_Click" />
             <asp:Button ID="Reset" runat="server" Text="Reset" CausesValidation="False" Visible="False" OnClick="Reset_Click" />
-            
         </div>
     </form>
 </body>
